@@ -1,0 +1,9 @@
+webservers:
+  hosts:
+    localhost
+  vars:
+    modules: [ 'apache2' ]
+    apache_www_dir: "/var/www/html"
+    web_domain_dev: "example.com"
+
+

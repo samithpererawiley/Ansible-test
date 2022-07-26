@@ -1,0 +1,12 @@
+#MySQL Settings
+aws_region: us-east-1
+
+# "US NonProd" 
+RDS_database_nonprod: "agsnonprodusdb"
+# RDS_Credentials_nonprod: "{{ lookup('aws_secret', 'ags/nonprod/rds-secrets', region=aws_region) }}"
+# RDS_host_nonprod: "{{ lookup('aws_ssm', '/ags/nonprod/dev/rds-connection-string', region=aws_region) }}"
+
+# "US Prod" 
+RDS_database_prod: "gsprod"
+# RDS_Credentials_prod: "{{ lookup('aws_secret', 'ags/prod/rds-secrets', region=aws_region) }}"
+# RDS_host_prod: "{{ lookup('aws_ssm', '/ags/prod/rds-connection-string', region=aws_region) }}"
