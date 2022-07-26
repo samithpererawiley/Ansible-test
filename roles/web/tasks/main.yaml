@@ -5,7 +5,7 @@
     state: latest
 - name: custom index.html
   ansible.builtin.copy:
-    dest: /var/www/html/index.html
+    dest: {{ apache_www_dir }}index.html
     content: |
       Custom Web Page
 - name: httpd service enabled
